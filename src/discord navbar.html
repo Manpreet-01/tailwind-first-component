@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body class="dark">
+    <!-- sidebar -->
+    <div class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white shadow-lg">
+      <!-- sidebar icons -->
+      <div class="sidebar-icon group">
+        <i class="fas fa-fire fa-2x"></i>
+        <span class="sidebar-tooltip group-hover:scale-100">tooltip 
+          <i class="fas fa-lightbulb text-yellow-100"></i>
+        </span>
+      </div>
+      <div class="sidebar-icon group">
+        <i class="fas fa-plus fa-2x"></i>
+        <span class="sidebar-tooltip group-hover:scale-100">tooltip
+          <i class="fas fa-lightbulb text-yellow-100"></i>
+        </span>
+      </div>
+      <div class="sidebar-icon group">
+        <i class="fas fa-bolt fa-lg"></i>
+        <span class="sidebar-tooltip group-hover:scale-100">tooltip
+          <i class="fas fa-lightbulb text-yellow-100"></i>
+        </span>
+      </div>
+      <div class="sidebar-icon group">
+        <i class="fas fa-poo fa-lg"></i>
+        <span class="sidebar-tooltip group-hover:scale-100">tooltip
+          <i class="fas fa-lightbulb text-yellow-100"></i>
+        </span>
+      </div>
+    </div>    
+  
+    <!-- main container -->
+    <div class="main w-auto h-screen ml-16 p-4 bg-gray-200 dark:bg-gray-800 text-black dark:text-white">
+      This is main container for content.
+    </div>
+</body>
+
+<script>
+  const body = document.querySelector("body");
+  
+  document.onclick = function () {
+    if (body.classList.contains("dark")) {
+      body.classList.remove("dark");
+    } else {
+      body.classList.add("dark");
+    }
+  }
+</script>
+</html>
